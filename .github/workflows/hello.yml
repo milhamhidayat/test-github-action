@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Hello World! Step
         run: echo "Hello World"
+      - name: "Lint"
+        run: echo "go linter"
