@@ -13,3 +13,11 @@ jobs:
         run: echo "Hello World"
       - name: "Lint"
         run: echo "go linter"
+  BuildMock:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Get OpenAPI file
+        run: echo "get open api yaml"
+      - name: Deploye mock
+        run: echo "Deploy mock"
+
