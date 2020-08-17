@@ -12,5 +12,5 @@ jobs:
       - name: Hello World! Step
         run: echo "Hello World"
       - name: "Build"
-        run: go build -o goaction
+        run: go build .
 
