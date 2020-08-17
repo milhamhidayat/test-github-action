@@ -11,6 +11,10 @@ jobs:
     steps:
       - name: Hello World! Step
         run: echo "Hello World"
-      - name: "Build"
+      - name: "Set up Go 1.14"
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.14
+      - name: "Build App"
         run: go build .
 
