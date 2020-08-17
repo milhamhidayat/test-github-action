@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
       - name: "Lint Go Code"
         run: |
-          wget -O- -nv https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.30.0
+          curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.30.0
           echo "test linter"
           golangci-lint --version
           golangci-lint run
